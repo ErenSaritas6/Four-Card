@@ -22,33 +22,61 @@ body {
 
 .starting-text {
     color: hsl(229, 6%, 66%);
-    margin: 1rem 0 4rem 0;
+    margin: 1rem 0 4.5rem 0;
 }
 
 .supervisor-container {
     border-top: 0.3rem hsl(180, 62%, 55%) solid;
     border-radius: 5px;
+    margin: 1.5rem 0;
+    height: 14.5rem;
+    width: 18.8rem;
+    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
 }
 
 .team-builder-container {
     border-top: 0.3rem hsl(0, 78%, 62%) solid;
-    border-radius: 5px; 
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    height: 14.5rem;
+    width: 18.8rem;
+    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
 }
 
 .karma-container {
     border-top: 0.3rem hsl(34, 97%, 64%) solid;
-    border-radius: 5px; 
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    height: 14.5rem;
+    width: 18.8rem;
+    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
 }
 
 .calculator-container {
     border-top: 0.3rem hsl(212, 86%, 64%) solid;
     border-radius: 5px;
+    margin: 1.5rem 0;
+    height: 14.5rem;
+    width: 18.8rem;
+    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
+}
+
+.margin-container {
+    margin: 1.5rem;
 }
 
 .container-title {
     font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0.4rem;
 }
 
 .container-text {
-    font-weight: 200;
+    font-size: 0.81rem;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 2.5rem;
+}
+
+.container-image {
+    margin-left: 11.5rem;
 }
