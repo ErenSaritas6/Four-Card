@@ -22,48 +22,43 @@ body {
 
 .starting-text {
     color: hsl(229, 6%, 66%);
-    margin: 1rem 0 4.5rem 0;
 }
+
+.first-line,
+.second-line,
+.starting-text {
+    text-align: center;
+}
+
+/*-------------cards-----------------------------*/
 
 .supervisor-container {
     border-top: 0.3rem hsl(180, 62%, 55%) solid;
-    border-radius: 5px;
-    margin: 1.5rem 0;
-    height: 14.5rem;
-    width: 18.8rem;
-    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
 }
 
 .team-builder-container {
     border-top: 0.3rem hsl(0, 78%, 62%) solid;
-    border-radius: 5px;
-    margin: 1.5rem 0;
-    height: 14.5rem;
-    width: 18.8rem;
-    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
 }
 
 .karma-container {
     border-top: 0.3rem hsl(34, 97%, 64%) solid;
-    border-radius: 5px;
-    margin: 1.5rem 0;
-    height: 14.5rem;
-    width: 18.8rem;
-    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
 }
 
 .calculator-container {
     border-top: 0.3rem hsl(212, 86%, 64%) solid;
-    border-radius: 5px;
-    margin: 1.5rem 0;
-    height: 14.5rem;
-    width: 18.8rem;
-    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
 }
 
-.margin-container {
-    margin: 1.5rem;
+.supervisor-container,
+.team-builder-container,
+.karma-container,
+.calculator-container {
+    padding: 2rem;
+    box-shadow: 0 16px 20px 0 rgba(52, 95, 145, 0.2);
+    border-radius: 5px;
+    margin: 1.5rem 0;
 }
+
+/* ------- inside of the cards -------------- */
 
 .container-title {
     font-weight: 600;
@@ -77,6 +72,78 @@ body {
     margin-bottom: 2.5rem;
 }
 
-.container-image {
-    margin-left: 11.5rem;
+/*-----------------------------------------------*/
+
+@media (width <= 375px) {
+
+    .starting-text {
+        margin: 1rem auto 4.5rem auto;
+    }
+
+    .supervisor-container,
+    .team-builder-container,
+    .karma-container,
+    .calculator-container {
+        height: 14.5rem;
+        width: 18.8rem;
+    }
+
+    .container-image {
+        margin-left: 11.5rem;
+    }
+    
+}
+
+@media (375px < width <= 1440px) {
+
+    .first-line,
+    .second-line {
+        font-size: 36px;
+    }
+    
+    .starting-text {
+        max-width: 32rem;
+        margin: 1rem auto 2.5rem auto;
+    }
+
+    .container-image {
+        margin-left: 14rem;
+    }
+
+    .container-title {
+        font-size: 20px;
+    }
+
+    .container-text {
+        line-height: 1.5rem;
+    }
+
+    .covering-container {
+        margin: 0 8rem 0 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: repeat(4, 5fr);
+        column-gap: 2rem;
+    }
+
+    .supervisor-container {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+
+    .team-builder-container {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .karma-container {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+    }
+
+    .calculator-container {
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
+    }
+
 }
